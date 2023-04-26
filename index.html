@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background: url('img/man-2604149_1920.jpg');
+            height: 1000px;
+            background-repeat: no-repeat;
+            font-family: 'Fredoka One', cursive;
+        }
+
+        .left {
+            display: inline-block;
+            position: absolute;
+            left: 60px;
+            top: 20px;
+        }
+
+        .left img {
+            width: 120px;
+            height: 45px;
+        }
+
+        .left div {
+            line-height: 35px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .mid {
+            display: block;
+            width: 44%;
+            margin: 20px auto;
+
+        }
+
+        .right {
+            position: absolute;
+            right: 34px;
+            top: 36px;
+            width: 20%;
+            display: flex;
+        }
+
+        .navbar {
+            display: inline-block;
+
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 20px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 34px 23px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: grey;
+        }
+
+        .btn {
+            display: inline-block;
+            margin: 0px 10px;
+            background-color: black;
+            color: white;
+            padding: 4px 1px;
+            border: 2px solid grey;
+            border-radius: 10px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: rgb(160, 134, 134);
+        }
+
+        .container {
+            border: 2px solid white;
+            margin: 204px 67px;
+            padding: 37px 10px;
+            width: 33%;
+            border-radius: 21px;
+        }
+        .form-group input,button{
+            font-family: 'Fredoka One', cursive;
+            text-align: center;
+            display: block;
+            width:300px;
+            padding: 1x;
+            border: 2px solid black;
+            margin: 11px auto;
+            font-size: 18px;
+            border-radius: 10px;
+        }
+        .container h1{
+            text-align: center;
+        }
+        .container button{
+            display: block;
+            width: 300px;
+            margin: 20px auto;
+        }
+    </style>
+
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+            <img src="img/a9684b8fd91436f9b33d78d5a68a13eb.jpg" alt="">
+            <div>Star Fitness</div>
+        </div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Fitness Center</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- Right box for buttons  -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of Rajkot now</h1>
+        <form action="noactions.php"></form>
+        <div class="form-group">
+            <input type="text" placeholder="Enter your Name">
+        </div>
+        <div class="form-group">
+            <input type="text" placeholder="Enter your Age">
+        </div>
+        <div class="form-group">
+            <input type="text" placeholder="Enter your Gender">
+        </div>
+        <div class="form-group">
+            <input type="text" placeholder="Enter your Locality">
+        </div>
+        <div class="form-group">
+            <input type="text" placeholder="Enter your Email Id">
+        </div>
+        <div class="form-group">
+            <input type="text" placeholder="Enter your Contact No.">
+        </div>
+        <button>Submit</button>
+    </div>
+</body>
+
+</html>
